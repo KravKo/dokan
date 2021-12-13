@@ -4,6 +4,7 @@
     <title>
         Dokan.com.np: Login
     </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <style>
         html {
             font-family: Franklin Gothic;
@@ -114,27 +115,51 @@
             padding-top: 1%;
         }
 
-        input[type=Search] {
-            font-size: 15;
-            background-color: #F3F3F3;
-            outline: white;
+        
+
+        nav form .search-data {
+            background-color: black;
+            outline: black;
             height: 50px;
             width: 600px;
             border-radius: 4px;
             border: 1px black;
             box-sizing: border-box;
+            padding: 0 10px;
+            color: #fff;
+            font-weight: 500;
+            background: none;
         }
 
-        .searchbtn {
-            width: 45px;
-            height: 45px;
-            text-indent: -9999px;
-            border: none;
-            border-radius: 0 2px 2px 0;
-            outline: none;
-            background-size: 22px;
-            box-shadow: none;
+        nav form button {
+            padding: 0 15px;
+            color: black;
+            font-size: 17px;
+            background: black;
+            border-radius: 2px;
             cursor: pointer;
+        }
+
+        nav form button:hover {
+            background: #e63600;
+        }
+
+        nav .menu-icon,
+        nav .cancel-icon,
+        nav .search-icon {
+            width: 40px;
+            text-align: center;
+            margin: 0 50px;
+            font-size: 18px;
+            color: #fff;
+            cursor: pointer;
+            display: none;
+        }
+
+        nav .menu-icon span,
+        nav .cancel-icon,
+        nav .search-icon {
+            display: none;
         }
 
         .searchareadown {
@@ -165,7 +190,8 @@
             border: none;
             cursor: pointer;
         }
-		.Headname{
+
+        .Headname {
             font-size: 30;
             padding-right: 5%;
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -210,44 +236,58 @@
 </head>
 
 <body>
-    <div class="topnav">
-        <a style="padding: 0 17px;" href="index.html">HOME</a>
-        <a style="padding: 0 17px;" href="index.html">CUSTOMER CARE</a>
-        <a style="padding: 0 17px;" href="#contact">TRACK MY ORDER</a>
-        <a style="padding: 0 17px;" href="login.html">LOGIN</a>
-        <a style="padding: 0 17px;" href="Signin.html">SIGN UP</a>
-        <select class="Language" name="Language" id="language">
-            <option value="USE">English US</option>
-            <option value="USE">English UK</option>
-            <option value="Nepali">Nepali</option>
-            <option value="ESP">Spanish</option>
-        </select>
-    </div>
-    <div class="Searcharea">
-        <center style="width: 1500;">
-            <spam class="Headname">
-                <spam style="font-size: 34; color: skyblue; ">D</spam>
-                <spam style="color: #2e2e54;">O</spam>
-                <spam style="color: #2e2e54;">K</spam>
-                <spam style="color: #2e2e54;">A</spam>
-                <spam style="color: #2e2e54;">N</spam>
+    <center>
+        <img src="Saleads.jpg" alt="Ads" srcset="">
+    </center>
+    <nav>
+        <div class="topnav">
+            <a style="padding: 0 17px;" href="index.html">HOME</a>
+            <a style="padding: 0 17px;" href="index.html">CUSTOMER CARE</a>
+            <a style="padding: 0 17px;" href="#contact">TRACK MY ORDER</a>
+            <a style="padding: 0 17px;" href="login.html">LOGIN</a>
+            <a style="padding: 0 17px;" href="Signin.html">SIGN UP</a>
+            <select class="Language" name="Language" id="language">
+                <option value="USE">English US</option>
+                <option value="USE">English UK</option>
+                <option value="Nepali">Nepali</option>
+                <option value="ESP">Spanish</option>
+            </select>
+        </div>
+        <div class="Searcharea">
+            <center style="width: 1500;">
+                <spam class="Headname">
+                    <spam style="font-size: 34; color: skyblue; ">D</spam>
+                    <spam style="color: #2e2e54;">O</spam>
+                    <spam style="color: #2e2e54;">K</spam>
+                    <spam style="color: #2e2e54;">A</spam>
+                    <spam style="color: #2e2e54;">N</spam>
+                    <form action="#">
+                        <input type="search" class="search-data" placeholder="Search" required>
+                        <button type="submit" class="fas fa-search"></button>
+                    </form>
+                <div class="search-icon">
+                    <span class="fas fa-search"></span>
+                </div>
+                <div class="cancel-icon">
+                    <span class="fas fa-times"></span>
+                </div>
+                
             </spam>
-            <input type="Search" placeholder="Search in Dokan">
-            <button class="searchbtn">S</button>
-        </center>
-        <center>
-            <div class="searchareadown">
-                <a style="padding: 0 10px;" href="#home">Men's Fassion</a>
-                <a style="padding: 0 10px;" href="index.html">Women's Fassion</a>
-                <a style="padding: 0 10px;" href="#about">Kid's Fashon</a>
-                <a style="padding: 0 10px;" href="#contact">On Sale</a>
-                <a style="padding: 0 10px;" href="#about">Digital</a>
-                <a style="padding: 0 10px;" href="#about">Groceries & Pets</a>
-                <a style="padding: 0 10px;" href="#about">Babies & Toys</a>
+            </center>
+            <center>
+                <div class="searchareadown">
+                    <a style="padding: 0 10px;" href="#home">Men's Fassion</a>
+                    <a style="padding: 0 10px;" href="index.html">Women's Fassion</a>
+                    <a style="padding: 0 10px;" href="#about">Kid's Fashon</a>
+                    <a style="padding: 0 10px;" href="#contact">On Sale</a>
+                    <a style="padding: 0 10px;" href="#about">Digital</a>
+                    <a style="padding: 0 10px;" href="#about">Groceries & Pets</a>
+                    <a style="padding: 0 10px;" href="#about">Babies & Toys</a>
 
-            </div>
-        </center>
-    </div>
+                </div>
+            </center>
+        </div>
+    </nav>
 
     <b>
         <h1>Welcome to Dokan! Please login.</h1>
@@ -291,9 +331,9 @@
                         <li><a href="#">order status</a></li>
                         <li><a href="#">payment options</a></li>
                     </ul>
+                </div>
             </div>
-        </div>
-        <center style="color: white;">© Dokan 2021</center>
+            <center style="color: white;">© Dokan 2021</center>
     </footer>
 
 </body>

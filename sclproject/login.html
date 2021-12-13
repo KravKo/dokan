@@ -4,6 +4,7 @@
     <title>
         Dokan.com.np: Login
     </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <style>
         html {
             font-family: Franklin Gothic;
@@ -115,6 +116,7 @@
         }
 
         input[type=Search] {
+            padding: 15px 15px;
             font-size: 15;
             background-color: #F3F3F3;
             outline: white;
@@ -125,20 +127,24 @@
             box-sizing: border-box;
         }
 
-        .searchbtn {
+        .submitserch {
+            color: white;
+            background-color: navy;
             width: 45px;
             height: 45px;
-            text-indent: -9999px;
             border: none;
             border-radius: 0 2px 2px 0;
+            font-size: 15px;
             outline: none;
-            background-size: 22px;
             box-shadow: none;
             cursor: pointer;
         }
+        .submitserch:hover{
+            opacity: 0.9;
+        }
 
         .searchareadown {
-            padding-top: 1%;
+            padding-top: 15px;
             padding-right: 15%;
         }
 
@@ -233,7 +239,9 @@
                 <spam style="color: #2e2e54;">N</spam>
             </spam>
             <input type="Search" placeholder="Search in Dokan">
-            <button class="searchbtn">S</button>
+            <button class="submitserch" type="submit"><i class="fa fa-search"></i></button>
+            
+        </form>
         </center>
         <center>
             <div class="searchareadown">
@@ -276,20 +284,20 @@
                 <div class="footer-col">
                     <h4>Customer Care</h4>
                     <ul>
-                        <li><a href="#">Help Center</a></li>
-                        <li><a href="#">How to Buy</a></li>
-                        <li><a href="#">Returns & Refunds</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a style="color: white;" href="#">Help Center</a></li>
+                        <li><a style="color: white;" href="#">How to Buy</a></li>
+                        <li><a style="color: white;" href="#">Returns & Refunds</a></li>
+                        <li><a style="color: white;" href="#">Contact Us</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Get help</h4>
                     <ul>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">shipping</a></li>
-                        <li><a href="#">returns</a></li>
-                        <li><a href="#">order status</a></li>
-                        <li><a href="#">payment options</a></li>
+                        <li><a style="color: white;" href="#">FAQ</a></li>
+                        <li><a style="color: white;" href="#">shipping</a></li>
+                        <li><a style="color: white;" href="#">returns</a></li>
+                        <li><a style="color: white;" href="#">order status</a></li>
+                        <li><a style="color: white;" href="#">payment options</a></li>
                     </ul>
             </div>
         </div>
