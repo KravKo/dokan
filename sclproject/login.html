@@ -4,222 +4,16 @@
     <title>
         Dokan.com.np: Login
     </title>
+    <link rel="shortcut icon" href="DOKAN.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <style>
-        html {
-            font-family: Franklin Gothic;
-        }
-
-        .Aboxforlogin {
-            width: 550px;
-            padding: 25px;
-            margin-left: 33%;
-            border-radius: 10px;
-            background-color: white;
-            color: black;
-            align-items: center;
-        }
-
-        input[type=text],
-        input[type=password] {
-            background-color: whitesmoke;
-            color: black;
-            width: 50%;
-            margin: 8px 0;
-            padding: 12px 20px;
-            display: inline-block;
-            border-radius: 10px;
-            border: 3px black;
-            box-sizing: border-box;
-        }
-
-        input[type=submit] {
-            background-color: navy;
-            border-radius: 5px;
-            font-size: 16px;
-            width: 40%;
-            color: white;
-            padding: 15px;
-            margin: 10px 0px;
-            border: none;
-            cursor: pointer;
-        }
-
-        input[type=submit]:hover {
-            opacity: 0.7;
-        }
-
-        a {
-            color: black;
-            text-decoration: none;
-
-        }
-
-        a:hover {
-            opacity: 0.7;
-            color: red;
-        }
-
-        strong {
-            padding-right: 35%;
-        }
-
-        .Rememberme {
-            padding-left: 28%;
-        }
-
-        .link {
-            text-align: right;
-            padding-right: 25%;
-        }
-
-        h1 {
-            text-align: center;
-            color: black;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        img {
-            align-items: right;
-        }
-
-        body {
-            background-color: #F3F3F3;
-        }
-
-        .signin {
-            text-align: right;
-            padding-right: 32%;
-            font-size: 12px;
-        }
-
-        .topnav {
-            position: relative;
-            display: inline-block;
-            font-size: 15px;
-            height: 23px;
-            line-height: 25px;
-            text-align: left;
-            cursor: pointer;
-            color: #212121;
-            padding-left: 60%;
-        }
-
-        .language {
-            background-color: #F3F3F3;
-        }
-
-        .searcharea {
-            background-color: white;
-            height: 100px;
-            padding-top: 1%;
-        }
-
-        input[type=Search] {
-            padding: 15px 15px;
-            font-size: 15;
-            background-color: #F3F3F3;
-            outline: white;
-            height: 50px;
-            width: 600px;
-            border-radius: 4px;
-            border: 1px black;
-            box-sizing: border-box;
-        }
-
-        .submitserch {
-            color: white;
-            background-color: navy;
-            width: 45px;
-            height: 45px;
-            border: none;
-            border-radius: 0 2px 2px 0;
-            font-size: 15px;
-            outline: none;
-            box-shadow: none;
-            cursor: pointer;
-        }
-        .submitserch:hover{
-            opacity: 0.9;
-        }
-
-        .searchareadown {
-            padding-top: 15px;
-            padding-right: 15%;
-        }
-
-        .Facebook {
-            background-color: #3b5998;
-            font-size: 16px;
-            border-radius: 3px;
-            width: 40%;
-            color: white;
-            padding: 15px;
-            margin: 10px 0px;
-            border: none;
-            cursor: pointer;
-        }
-
-        .Google {
-            background-color: #d34836;
-            font-size: 16px;
-            border-radius: 3px;
-            width: 40%;
-            color: white;
-            padding: 15px;
-            margin: 10px 0px;
-            border: none;
-            cursor: pointer;
-        }
-		.Headname{
-            font-size: 30;
-            padding-right: 5%;
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        }
-
-        .container {
-            max-width: 1170px;
-            margin: auto;
-        }
-
-        .row {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        ul {
-            list-style: none;
-        }
-
-        .footer {
-            border-radius: 5px;
-            margin: 5px;
-            background-color: #2e2e54;
-            padding: -8px 0;
-        }
-
-        .footer-col {
-            width: 25%;
-            padding: 0 15px;
-            color: white;
-        }
-
-        .footer-col h4 {
-            font-size: 18px;
-            color: #ffffff;
-            text-transform: capitalize;
-            margin-bottom: 35px;
-            font-weight: 500;
-            position: relative;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="login.css">
 </head>
 
 <body>
     <div class="topnav">
         <a style="padding: 0 17px;" href="index.html">HOME</a>
-        <a style="padding: 0 17px;" href="index.html">CUSTOMER CARE</a>
-        <a style="padding: 0 17px;" href="#contact">TRACK MY ORDER</a>
+        <a style="padding: 0 17px;" href="customerc.html">CUSTOMER CARE</a>
+        <a style="padding: 0 17px;" href="trackmyorder.html">TRACK MY ORDER</a>
         <a style="padding: 0 17px;" href="login.html">LOGIN</a>
         <a style="padding: 0 17px;" href="Signin.html">SIGN UP</a>
         <select class="Language" name="Language" id="language">
@@ -229,32 +23,29 @@
             <option value="ESP">Spanish</option>
         </select>
     </div>
-    <div class="Searcharea">
-        <center style="width: 1500;">
-            <spam class="Headname">
-                <spam style="font-size: 34; color: skyblue; ">D</spam>
-                <spam style="color: #2e2e54;">O</spam>
-                <spam style="color: #2e2e54;">K</spam>
-                <spam style="color: #2e2e54;">A</spam>
-                <spam style="color: #2e2e54;">N</spam>
-            </spam>
-            <input type="Search" placeholder="Search in Dokan">
-            <button class="submitserch" type="submit"><i class="fa fa-search"></i></button>
-            
-        </form>
-        </center>
-        <center>
-            <div class="searchareadown">
-                <a style="padding: 0 10px;" href="#home">Men's Fassion</a>
-                <a style="padding: 0 10px;" href="index.html">Women's Fassion</a>
-                <a style="padding: 0 10px;" href="#about">Kid's Fashon</a>
-                <a style="padding: 0 10px;" href="#contact">On Sale</a>
-                <a style="padding: 0 10px;" href="#about">Digital</a>
-                <a style="padding: 0 10px;" href="#about">Groceries & Pets</a>
-                <a style="padding: 0 10px;" href="#about">Babies & Toys</a>
+    <form action="index.html">
+        <div class="Searcharea">
+            <center style="width: 1500;">
+                <a class="Headname" href="index.html">
+                    <spam style="font-size: 34; color: skyblue; ">D</spam>
+                    <spam style="color: #2e2e54;">O K A N</spam>
+                </a>
+                <input type="Search" placeholder="Search in Dokan">
+                <button class="submitserch" type="submit"><i class="fa fa-search"></i></button>
+            </center>
+    </form>
+    <center>
+        <div class="searchareadown">
+            <a style="padding: 0 10px;" href="index.html#menfassion">Men's Fassion</a>
+            <a style="padding: 0 10px;" href="index.html#womenfassion">Women's Fassion</a>
+            <a style="padding: 0 10px;" href="#about">Kid's Fashon</a>
+            <a style="padding: 0 10px;" href="#contact">On Sale</a>
+            <a style="padding: 0 10px;" href="#about">Digital</a>
+            <a style="padding: 0 10px;" href="#about">Groceries & Pets</a>
+            <a style="padding: 0 10px;" href="#about">Babies & Toys</a>
 
-            </div>
-        </center>
+        </div>
+    </center>
     </div>
 
     <b>
@@ -267,7 +58,7 @@
                 <strong>Username :</strong><br>
                 <input type="text" placeholder="Enter Username" name="username" required><br>
                 <strong>Password :</strong><br>
-                <input type="password" placeholder="Enter Password" name="password" required><br>
+                <input title="More than 6 letters" type="password" placeholder="Enter Password" name="password" required><br>
                 <div class="link"><a href="Signin.html" style="font-size: 12px;"> Forgot password? </a></div>
                 <input type="submit" value="Login">
                 <div class="Rememberme"> <input type="checkbox" checked="checked"><strong>Remember me</strong></div>
@@ -299,9 +90,10 @@
                         <li><a style="color: white;" href="#">order status</a></li>
                         <li><a style="color: white;" href="#">payment options</a></li>
                     </ul>
+                </div>
             </div>
-        </div>
-        <center style="color: white;">© Dokan 2021</center>
+            <center style="color: white;">© Dokan 2021</center>
     </footer>
+<script type="login.js"></script>
 
 </body>

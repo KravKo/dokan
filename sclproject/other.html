@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Other</title>
+	<style>
+		img{
+			height: 300px;
+			width: 300px;
+		}
+
+		#btn{
+			color: white;
+			height: 300px;
+			width: 305px;
+			border: 5px solid white;
+			background-color: blue;
+			border-radius: 50%;
+			font-weight: bold;
+			font-size: 20px;
+		}
+
+		#btn:hover{
+			cursor: pointer;
+			color: black;
+			font-weight: bold;
+			font-size: 30px;
+			border: 7px solid white;
+			background-color: yellow;
+		}
+
+.mid-way{
+
+        }
+
+        .prdouct-o{
+            margin-right: 30px;
+            margin-top: 30px;
+            margin-left: 30px;
+            margin-bottom: 30px;
+            text-align: center;
+            height: 405px;
+            width: 350px;
+            background-color: #FFF8F3;
+            border-radius: 15px;
+            font-size: 15px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .prdouct-o:hover{
+            cursor: pointer;
+             transform: scale(1.1);
+
+        }
+
+        .texts{
+            display: inline;
+        }
+
+        .name{
+            font-size: 20px;
+            margin-left: 30px ;
+        }
+        
+        .prdouct-o img{
+            border-radius: 10px;
+            height: 250px;
+            width: 300px;
+            margin-top: 20px;
+        }
+
+        .prdouct-o b{
+            margin-right: 80px;
+            font-size: 30px;
+        }
+
+        .buying-btns{
+            margin-top: 10px;
+            display: inline;
+
+        }
+
+        .buy-btn{
+            border-radius: 5px;
+            border: 3px solid white;
+            background-color: yellow;
+            font-size: 15px;
+            font-weight: Bold;
+            height: 50px;
+            width: 45%;
+            opacity: 0.6;
+            transition: 0.3s;
+        }
+
+         .addcart-btn{
+            border-radius: 5px;
+            border: 3px solid white;
+            background-color: skyblue;
+            font-size: 15px;
+            font-weight: Bold;
+            height: 50px;
+            width: 45%;
+            opacity: 0.6;
+            transition: 0.3s;
+        }
+
+        .buy-btn:hover{
+            opacity: 1;
+            cursor: pointer;
+        }
+
+        .addcart-btn:hover{
+            opacity: 1;
+            cursor: pointer;
+        }
+
+        .image{
+
+        }
+
+        .images:hover{
+            cursor: pointer;
+        }
+
+	</style>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body bgcolor="black">
+	<center>
+	<img id="img" src="pica.png">
+	<br>
+	<button id="btn">Click to change image</button>
+	</center>
+
+	<div class="mid-way">
+        <div class="prdouct-o">
+            <div class="images">
+                <img src="nikeshoe.jpg">
+            </div>
+            <span class="texts">
+                <br>
+               <b>Nike Shoe</b>
+               RS-20000
+            </span>
+            <br>
+            <div class="Buying-btns">
+
+            <button class="buy-btn"><i class="fas fa-shopping-basket"></i> Buy Now</button>
+
+            <button class="addcart-btn"><i class="fas fa-shopping-cart"></i> Add To Cart</button>
+
+            </div>
+        </div>
+
+        <div class="prdouct-o">
+            <div class="images">
+                <img src="NIKONshoe.jpg">
+            </div>
+            <span class="texts">
+                <br>
+               <b>Nikon Shoe</b>
+               RS-20000
+            </span>
+            <br>
+            <div class="Buying-btns">
+
+            <button class="buy-btn"><i class="fas fa-shopping-basket"></i> Buy Now</button>
+
+            <button class="addcart-btn"><i class="fas fa-shopping-cart"></i> Add To Cart</button>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+	<script>
+		console.log("heloow world");
+		let img = document.getElementById('img')
+		const btn = document.getElementById('btn')
+		var imagenow = 0;
+
+		function main(){
+			btn.addEventListener('click', function(){
+				if (imagenow == 0) {
+					img.src="picb.png";
+					imagenow = 1;
+					console.log("image b load");
+				}
+				else{
+					img.src="pica.png";
+					console.log("image a load");
+					imagenow = 0;
+				}
+
+			})
+		}
+		main();
+	</script>
+</body>
+</html>

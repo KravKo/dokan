@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Popou</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.start-btn{
+			margin: 30px;
+			color: White;
+			font-size: 20px;
+			font-weight: bold;
+			background-color: navy;
+			height: 50px;
+			width: 170px;
+			border: 3px solid navy;
+			border-radius: 10px;
+		}
+		.start-btn:hover{
+			cursor: pointer;
+			background-color: white;
+			color: navy;
+			border-radius: 3px solid white;
+		}
+
+		.popup{
+		  position: fixed;
+		  top: 50%;
+		  left: 50%;
+		  transform: translate(-50%, -50%) scale(0);
+		  transition: 200ms ease-in-out;
+		  border: 1px solid black;
+		  border-radius: 10px;
+		  z-index: 10;
+		  background-color: white;
+		  width: 500px;
+		  max-width: 80%;
+		}
+
+		.popup-header{
+			padding: 10px 15px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			border-bottom: 1px solid black;
+		}
+
+		.buy{
+			margin-top: 30px;
+			margin-left: 340px;
+			margin-bottom: 10px;
+			align-items: right;
+			color: White;
+			font-size: 20px;
+			font-weight: bold;
+			background-color: black;
+			height: 35px;
+			width: 150px;
+			border: 3px solid black;
+			border-radius: 5px;
+		}
+		.buy:hover{
+			cursor: pointer;
+			background-color: white;
+			color: black;
+			border-radius: 2px solid black;
+		}
+
+		.cancle{
+			border: none;
+			background-color: white;
+			font-weight: bold;
+			font-size: 25px;
+			cursor: pointer;
+		}
+		#success{
+			text-align: right;
+			margin-right: 10px;
+		}
+
+		#overlay{
+		  position: fixed;
+		  opacity: 0;
+		  transition: 200ms ease-in-out;
+		  top: 0;
+		  left: 0;
+		  right: 0;
+		  bottom: 0;
+		  background-color: rgba(0, 0, 0, .5);
+		  pointer-events: none;		}
+	</style>
+</head>
+<body bgcolor="yellow"> 
+	<button class="start-btn" id="start-btn">Click ME</button>
+	<div class="popup" id="Popup">
+		<div class="popup-header">
+		<h1>Thanks For clicking</h1>
+		<button class="cancle" id="cancle">X</button>
+		</div>
+		<p>Click This Btn to buy</p>
+		<button class="buy">Buy</button>
+		<p id="success"></p>
+	</div>
+	<div id="overlay"></div>
+</body>
+</html>
