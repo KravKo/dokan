@@ -7,6 +7,10 @@
         <link rel="shortcut icon" href="DOKAN.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
         html {
             font-family: Franklin Gothic;
         }
@@ -122,7 +126,7 @@
             border-radius: 5px;
             margin: 5px;
             background-color: #2e2e54;
-            padding: -8px 0;
+            padding: 30px ;
         }
 
         .footer-col {
@@ -138,6 +142,53 @@
             margin-bottom: 35px;
             font-weight: 500;
             position: relative;
+        }
+
+        .mainbox{
+            border-radius:8px;
+            background-color: white;
+            text-align: center;
+            align-items: center;
+            width: 55%;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            margin-left: 25%;
+        }
+
+        .trackinput{
+            outline: none;
+            background-color: whitesmoke;
+            color: black;
+            margin: 8px 0;
+            padding: 12px 20px;
+            display: inline-block;
+            border-radius: 10px;
+            border: 3px solid white;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            width: 50%;
+        }
+
+        .submittrack {
+
+            color: white;
+            background-color: navy;
+            width: 25%;
+            height: 45px;
+            border: none;
+            border-radius: 3px;
+            font-size: 20px;
+            outline: none;
+            box-shadow: none;
+            cursor: pointer;
+            margin-left: 73%;
+            margin-bottom: 10px;
+        }
+
+        .sendsucces{
+            margin-top: 2px;
+            margin-left: 73%;
+
         }
     </style>
 </head>
@@ -184,8 +235,19 @@
         </div>
     </nav>
 
-<div>
+<div class="mainbox">
     <H1>Customer care</H1>
+    <input class="trackinput" type="text" name="text" placeholder="Enter Your Qurrey"><br>
+    <h3 style="margin-right: 75%;">COMPLAIN<h3>
+    <button id="refund" style="height: 25%; width: 22%; background-color: red; font-size: 35px; padding: 20px; border-radius: 6px; cursor: pointer; margin: 20px;">WANT MY REFUND</button>
+    <button id="bugfix"  style="height: 25%; width: 20%; background-color: green; font-size: 35px; padding: 20px; border-radius: 6px; cursor: pointer; margin: 20px;">FIX THE BUGS</button>
+    <button id="fake" style="height: 25%; width: 23%; background-color: blue; font-size: 35px; padding: 20px; border-radius: 6px; cursor: pointer; margin: 20px;">FAKE PRODUCTS</button>
+    <button id="badproduct" style="height: 25%; width: 20%; background-color: yellow; font-size: 35px; padding: 20px; border-radius: 6px; cursor: pointer; margin: 20px;">BAD PRODUCT</button>
+    <button id="highprice" style="height: 25%; width: 20%; background-color: pink; font-size: 35px; padding: 20px; border-radius: 6px; cursor: pointer; margin: 20px;">HIGH PRICE</button>
+    <button id="dilivery" style="height: 25%; width: 22%; background-color: cyan; font-size: 35px; padding: 20px; border-radius: 6px; cursor: pointer; margin: 20px;">DELIVERY PROBLEM</button>
+    <button id="others" style="height: 25%; width: 20%; background-color: grey; font-size: 35px; padding: 20px; border-radius: 6px; cursor: pointer; margin: 20px;">OTHERS</button><br>
+<button id="submittrack" class="submittrack" type="submit">Send</button>
+<p class="sendsucces" id="sendsucces" ></p>
 </div>
     </form>
     <footer class="footer">
@@ -213,5 +275,119 @@
             </div>
             <center style="color: white;">© Dokan 2021</center>
     </footer>
+    <script>
+        let click = 1;
+        let aclick = 1;
+        let bclick = 1;
+        let cclick = 1;
+        let dclick = 1;
+        let eclick = 1;
+        let fclick = 1;
+        const refund = document.getElementById('refund');
+        const bugfix = document.getElementById('bugfix');
+        const fake = document.getElementById('fake');
+        const badproduct = document.getElementById('badproduct');    
+        const highprice = document.getElementById('highprice');
+        const dilivery = document.getElementById('dilivery');
+        const others = document.getElementById('others');   
+        const submittrack= document.getElementById('submittrack'); 
+        let sendsucces = document.getElementById('sendsucces');
 
+
+
+        function main(){
+            submittrack.addEventListener('click',function(){
+                sendsucces.innerHTML="Send Sucessfully" ;
+            })
+
+
+            refund.addEventListener('click',function(){
+                console.log("Hello")
+                click++;
+                if(click == 2){
+                    refund.style.opacity = "0.5";
+                }
+                else{
+                    refund.style.opacity = "1";
+                    click= 1;
+                }
+            })
+
+            bugfix.addEventListener('click',function(){
+                console.log("Hello")
+                aclick++;
+                if(aclick == 2){
+                    bugfix.style.opacity = "0.5";
+                }
+                else{
+                    bugfix.style.opacity = "1";
+                    aclick= 1;
+                }
+            })
+
+            fake.addEventListener('click',function(){
+                console.log("Hello")
+                bclick++;
+                if(bclick == 2){
+                    fake.style.opacity = "0.5";
+                }
+                else{
+                    fake.style.opacity = "1";
+                    bclick= 1;
+                }
+            })
+
+            badproduct.addEventListener('click',function(){
+                console.log("Hello")
+                cclick++;
+                if(cclick == 2){
+                    badproduct.style.opacity = "0.5";
+                }
+                else{
+                    badproduct.style.opacity = "1";
+                    cclick= 1;
+                }
+            })
+
+            highprice.addEventListener('click',function(){
+                console.log("Hello")
+                dclick++;
+                if(dclick == 2){
+                    highprice.style.opacity = "0.5";
+                }
+                else{
+                    highprice.style.opacity = "1";
+                    dclick= 1;
+                }
+            })
+
+            dilivery.addEventListener('click',function(){
+                console.log("Hello")
+                eclick++;
+                if(eclick == 2){
+                    dilivery.style.opacity = "0.5";
+                }
+                else{
+                    dilivery.style.opacity = "1";
+                    eclick= 1;
+                }
+            })
+
+            others.addEventListener('click',function(){
+                console.log("Hello")
+                fclick++;
+                if(fclick == 2){
+                    others.style.opacity = "0.5";
+                }
+                else{
+                    others.style.opacity = "1";
+                    fclick= 1;
+                }
+            })
+
+            
+        }
+
+        main();
+    </script>
 </body>
