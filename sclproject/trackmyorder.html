@@ -7,6 +7,10 @@
         <link rel="shortcut icon" href="DOKAN.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
         html {
             font-family: Franklin Gothic;
         }
@@ -122,7 +126,7 @@
             border-radius: 5px;
             margin: 5px;
             background-color: #2e2e54;
-            padding: -8px 0;
+            padding: 30px;
         }
 
         .footer-col {
@@ -139,6 +143,49 @@
             font-weight: 500;
             position: relative;
         }
+
+        .mainbox{
+            border-radius:8px;
+            background-color: white;
+            text-align: center;
+            align-items: center;
+            height: 80%;
+            width: 55%;
+            margin-top: 30px;
+
+            margin-bottom: 20px;
+            margin-left: 25%;
+        }
+
+        .trackinput{
+            outline: none;
+            background-color: whitesmoke;
+            color: black;
+            width: 50%;
+            margin: 8px 0;
+            padding: 12px 20px;
+            display: inline-block;
+            border-radius: 10px;
+            border: 3px solid white;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            width: 35%;
+        }
+
+        .submittrack {
+            color: white;
+            background-color: navy;
+            width: 45px;
+            height: 45px;
+            border: none;
+            border-radius: 0 2px 2px 0;
+            font-size: 15px;
+            outline: none;
+            box-shadow: none;
+            cursor: pointer;
+        }
+
+
     </style>
 </head>
 
@@ -185,8 +232,14 @@
         </div>
     </nav>
 
-<div>
+<div class="mainbox">
     <H1>My orders</H1>
+    <input class="trackinput" type="text" name="text" placeholder="Enter Your Order Code">
+    <button class="submittrack" type="submit"><i class="fa fa-search"></i></button>
+    <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3566.4603271203823!2d87.99703431460183!3d26.633739983248496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e5ba8ee6e7a4af%3A0x7b96b7292121673f!2sKanchanjunga%20English%20Higher%20Secondary%20School!5e0!3m2!1sen!2snp!4v1647089128615!5m2!1sen!2snp" width="800" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe></p>
+    <p style="background-color: black; color:white; font-weight: bolder; margin: 20px; margin-left: 30%; margin-right: 30%;">YOUR ORDER WILL BE VISIBLE HERE!</p>
+
+
 </div>
     </form>
     <footer class="footer">
